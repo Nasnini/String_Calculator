@@ -1,6 +1,10 @@
 from string_calculator.calculator import add
 import pytest
 
+# Testing invalid inputs
+def test_invalid_input():
+    assert add(string) == "invalid input"
+
 # Testing id add function is 0
 def test_add_empty_str():
     assert add("") == 0

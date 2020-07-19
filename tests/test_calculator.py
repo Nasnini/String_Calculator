@@ -1,27 +1,28 @@
 from string_calculator.calculator import add
-import pytest
+
+#import pytest
 
 # Testing invalid inputs
-def test_invalid_input():
-    assert add(string) == "invalid input"
+# def test_invalid_input():
+#     assert add(string) == "invalid input"
 
 # Testing id add function is 0
 def test_add_empty_str():
     assert add("") == 0
 
 # Testing that the add function has one value
-def test_add_one_number():
+def test_add_one_integer():
     assert add("1") == 1
 
 # Testing that the add function has two values
-def test_add_two_numbers():
+def test_add_two_integers():
     assert add("1,2") == 3
 
-# Tsting the add function can have multiple numbers
-def test_add_many_numbers():
+# Testing the add function can have multiple integers
+def test_add_many_integers():
     assert add("1,2,3,4") == 10 
 
-# Testing if add can handle new lines between numbers instead of commas
+# Testing if add can handle new lines between integers instead of commas
 def test_new_lines():
     assert add("1\n2,3") == 6
 
@@ -43,7 +44,7 @@ def test_more_than_twenty():
 def test_delimeter_len():
     assert add("//[***]\n1***2***3") == 6
 
-
 # Testing if the add function can allow multiple delimeters
 def test_multiple_delimeters():
     assert add("//[*][%]\n1*2%3") == 6
+

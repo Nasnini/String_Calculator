@@ -38,7 +38,7 @@ olefile==0.45.1
 packaging==20.1
 -e git+https://github.com/Nasnini/password_checker.git@8c6b630a66be99e5d59feb107914c369546d98bf#egg=Password_checker
 pexpect==4.2.1
-Pillow==5.1.0
+Pillow==9.0.0
 pluggy==0.13.1
 protobuf==3.0.0
 py==1.8.1
